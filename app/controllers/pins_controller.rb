@@ -33,7 +33,7 @@ class PinsController < ApplicationController
 		end
 	end
 	def destroy
-		if (current_user.email == @pin.user.email)
+		if (current_user.email == @pin.user.email) || (current_user.email == 'admin@admin.com')
 	@pin.destroy
 	redirect_to root_path
 else
