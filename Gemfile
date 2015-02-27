@@ -35,4 +35,4 @@ gem "paperclip", "~> 4.2"
 gem 'masonry-rails', '~> 0.2.4'
 
 gem 'pry-rails'
-gem 'activeadmin', '~> 0.6.6'
+
