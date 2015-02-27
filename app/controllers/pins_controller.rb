@@ -33,8 +33,13 @@ class PinsController < ApplicationController
 		end
 	end
 	def destroy
+		if (current_user.email == @pin.user.email)
 	@pin.destroy
 	redirect_to root_path
+else
+	redirect_to @pin, notice: "You are not the creater of this pin"
+end
+
 	end
 
 	def upvote
