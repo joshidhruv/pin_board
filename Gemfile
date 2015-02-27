@@ -25,7 +25,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem "rmagick", :require => 'RMagick'
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 gem 'haml', '~> 4.0.5'
 gem 'bootstrap-sass', '~> 3.3.3'
 gem 'acts_as_votable', '~> 0.10.0'
