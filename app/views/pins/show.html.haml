@@ -16,8 +16,7 @@
 						.btn-group.pull-right
 							= link_to like_pin_path(@pin), method: :put, class: "btn btn-default" do
 								%span.glyphicon.glyphicon-heart
-								= @pin.get_upvotes.size
-							- if user_signed_in?
-								- if ((current_user.email == @pin.user.email) || (current_user.email == 'admin@admin.com'))
-									= link_to "Edit", edit_pin_path, class: "btn btn-default"
-									= link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
+								= @pin.get_upvotes.size						
+								
+								= link_to "Edit", edit_pin_path, class: "btn btn-default"
+								= link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
